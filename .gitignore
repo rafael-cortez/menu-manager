@@ -1,0 +1,10 @@
+### Git Ignore
+
+## Folders
+
+venv/
+.idea/
+menumanager/api/__pycache__/
+menumanager/api/views/__pycache__/
+
+menumanager/menumanager/__pycache__/
