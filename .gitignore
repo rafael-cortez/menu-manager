@@ -8,3 +8,6 @@ menumanager/api/__pycache__/
 menumanager/api/views/__pycache__/
 
 menumanager/menumanager/__pycache__/
+menumanager/webapp/menumanager/node_modules/
+
+menumanager/api/migrations/
