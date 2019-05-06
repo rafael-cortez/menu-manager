@@ -1,0 +1,15 @@
+.Home{
+  display: flex;
+  flex-direction: column;
+}
+.Container{
+  height: 100vh;
+  color: firebrick;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+}
+.title{
+  font-size: 80px;
+}

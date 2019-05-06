@@ -3,7 +3,6 @@ from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
 from ..models import DefaultSandwich, Ingredient, Promotion
 
-
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all().order_by('-date_joined')
     serializer_class = UserSerializer
@@ -15,7 +14,7 @@ class GroupViewSet(viewsets.ModelViewSet):
 
 
 class SandwichViewSet(viewsets.ModelViewSet):
-    queryset = DefaultSandwich.objects.all()
+    queryset = DefaultSandwich.objects.prefetch_related('ingredient')
     serializer_class = SandwichSerializer
 
 

@@ -6,28 +6,28 @@ from rest_framework import serializers
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
-        fields = ('url', 'username', 'email', 'groups')
+        fields = '__all__'
 
 
 class GroupSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Group
-        fields = ('url', 'name')
+        fields = '__all__'
 
 
 class SandwichSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = DefaultSandwich
-        fields = ('name', 'ingredient')
+        fields = '__all__'
 
 
 class IngredientSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Ingredient
-        fields = ('name', 'price')
+        fields = '__all__'
 
 
 class PromotionSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Promotion
-        fields = ('name', 'desc')
+        fields = '__all__'

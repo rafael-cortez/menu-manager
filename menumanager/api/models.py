@@ -11,7 +11,7 @@ class Ingredient(models.Model):
 
 class DefaultSandwich(models.Model):
     name = models.CharField(max_length=128)
-    ingredient = models.ManyToManyField(Ingredient, related_name='ingredients')
+    ingredient = models.ManyToManyField(Ingredient, related_name='ingredient')
 
     def __str__(self):
         return self.name

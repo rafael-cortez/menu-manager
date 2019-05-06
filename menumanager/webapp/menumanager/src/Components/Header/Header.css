@@ -1,0 +1,44 @@
+.Header{
+    position: fixed;
+    width: 100%;
+    z-index: 0;
+}
+.HeaderNav{
+    display: flex;
+    background-color: firebrick;
+    justify-content: space-around;
+    z-index: 0;
+}
+.HeaderBranch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: darksalmon;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.HeaderList{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+.HeaderItem{
+    list-style-type: none;
+}
+.HeaderLink{
+    text-decoration: none;
+    color:darksalmon;
+}
+    .HeaderLink:hover{
+        color: rgb(255, 225, 215);
+    }
+
+.image-bg{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  opacity: 0.6;
+  z-index: -2;
+}
